@@ -10,8 +10,8 @@ function setGradient() {
 	+ ", " 
 	+ color2.value 
 	+ ")";
-
-	css.textContent = body.style.background + ";";
+	var res = body.style.background.slice(16, -20);
+	css.textContent = res + ";";
 }
 
 color1.addEventListener("input", setGradient);
